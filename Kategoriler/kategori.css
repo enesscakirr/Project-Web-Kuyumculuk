@@ -1,0 +1,101 @@
+/* 1. KATEGORİ BANNER (İmalathane'dekine benzer) */
+.kategori-banner {
+  width: 100%;
+  height: 40vh; 
+  position: relative;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45); /* Hafif koyu katman */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kategori-banner h1 {
+  color: white;
+  font-size: 3.8em;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 0 20px;
+}
+
+
+/* 2. ÜRÜN LİSTESİ BÖLÜMÜ (GÜNCELLENDİ) */
+.urun-listesi {
+  max-width: 1500px;
+  margin: 60px auto; 
+  background-color: rgba(255, 255, 255, 0.4); 
+  border-radius: 12px;
+  padding: 30px; 
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); 
+}
+
+/* Ürünlerin ızgara (grid) konteyneri */
+.urun-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px; 
+}
+
+/* Tekil Ürün Kartı (Blok) */
+.urun-karti {
+  display: block; 
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.urun-karti:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Kartın Resim Bölümü */
+.urun-resim {
+  width: 100%;
+  height: 450px; 
+  overflow: hidden;
+}
+
+.urun-resim img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+}
+
+.urun-karti:hover .urun-resim img {
+  transform: scale(1.05); /* Üzerine gelince resim hafifçe büyür */
+}
+
+/* Kartın Bilgi Bölümü */
+.urun-bilgi {
+  padding: 20px;
+  text-align: center;
+}
+
+.urun-isim {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  color: #013220;
+  margin: 0 0 10px 0;
+}
+
+.urun-fiyat {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}

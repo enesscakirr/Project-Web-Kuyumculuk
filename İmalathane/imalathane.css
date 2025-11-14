@@ -1,0 +1,88 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fdfdfd;
+  color: #222;
+}
+h1, h2, h3 {
+
+  font-family: 'Playfair Display', serif;
+  color: #013220; 
+}
+/*BANNER (İMALATHANE GÖRSELİ) */
+.imalathane-banner {
+  width: 100%;
+  height: 50vh; 
+  position: relative;
+  background-color: #333;
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imalathane-banner h1 {
+  color: white;
+  font-size: 3.5em;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* 2. BÖLÜM: İÇERİK */
+.imalathane-icerik {
+  padding: 60px 20px;
+}
+
+/* İçeriği ortalamak ve sınırlamak için bir konteyner */
+.container {
+  max-width: 900px;
+  margin: 0 auto; 
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.imalathane-icerik h2 {
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+}
+
+.imalathane-icerik h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-left: 4px solid gold; 
+  padding-left: 10px;
+}
+
+.imalathane-icerik p {
+  font-size: 1.1em;
+  line-height: 1.7; 
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.divider {
+  height: 2px;
+  width: 100px;
+  background-color: gold;
+  margin: 40px auto; 
+  border: 0;
+}
