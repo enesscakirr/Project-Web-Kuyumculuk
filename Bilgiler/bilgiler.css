@@ -1,3 +1,6 @@
+body {
+  background-color: #e4eee4;
+}
 .sayfa-basligi {
   text-align: center;
   margin-top: 40px;
@@ -21,11 +24,11 @@
   align-items: start;
 }
 .blog-karti {
-  background-color: #ffffff;
+  background-color: #dce9be;
   border-radius: 10px;
   overflow: hidden; 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
-  border: 1px solid #eee;
+  border: 1.5px solid #000000;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%; 
 }
@@ -51,7 +54,7 @@
 .kart-icerik p {
   font-size: 1em;
   line-height: 1.7; 
-  color: #444;
+  color: #141404;
   font-weight: 300;
   margin-bottom: 15px;
 }
