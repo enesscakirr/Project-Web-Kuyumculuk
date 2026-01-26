@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.45); /* Hafif koyu katman */
+  background-color: rgba(0, 0, 0, 0.45); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,8 +26,6 @@
   padding: 0 20px;
 }
 
-
-/* 2. ÜRÜN LİSTESİ BÖLÜMÜ (GÜNCELLENDİ) */
 .urun-listesi {
   max-width: 1500px;
   margin: 60px auto; 
@@ -37,14 +35,12 @@
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); 
 }
 
-/* Ürünlerin ızgara (grid) konteyneri */
 .urun-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px; 
 }
 
-/* Tekil Ürün Kartı (Blok) */
 .urun-karti {
   display: block; 
   text-decoration: none;
@@ -61,7 +57,6 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* Kartın Resim Bölümü */
 .urun-resim {
   width: 100%;
   height: 450px; 
@@ -76,7 +71,7 @@
 }
 
 .urun-karti:hover .urun-resim img {
-  transform: scale(1.05); /* Üzerine gelince resim hafifçe büyür */
+  transform: scale(1.05); 
 }
 
 /* Kartın Bilgi Bölümü */

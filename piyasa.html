@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canlı Piyasa - Çakır Kuyumculuk</title>
+  <link rel="stylesheet" href="stil.css">
+  
+  <style>
+    /* Piyasa Sayfasına Özel CSS */
+    .piyasa-wrapper {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .piyasa-baslik {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .piyasa-baslik h1 {
+        color: #013220;
+        border-bottom: 3px solid gold;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    .piyasa-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    .piyasa-karti {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        border-top: 6px solid #013220;
+        transition: transform 0.3s ease;
+    }
+    .piyasa-karti:hover { transform: translateY(-10px); }
+    .ikon-wrapper { font-size: 3.5em; margin-bottom: 15px; }
+    .deger-adi { font-size: 1.4em; color: #666; font-weight: 500; margin-bottom: 10px; }
+    .deger-fiyat { font-size: 2.2em; font-weight: bold; color: #013220; margin: 15px 0; }
+    .degisim { font-weight: bold; padding: 6px 15px; border-radius: 20px; display: inline-block; font-size: 0.9em; }
+    .artti { background-color: #e6fffa; color: #00a878; }
+    .azaldi { background-color: #fff5f5; color: #e53e3e; }
+    .guncelleme-zamani { text-align: center; margin-top: 50px; color: #888; font-size: 0.9em; font-style: italic; }
+    .yukleniyor { color: #999; font-size: 1em; }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div class="navbar">
+      <div class="logo">Çakır Kuyumculuk</div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="kolyeler.html">Ürünler</a></li>
+            <li><a href="sepet.html">Sepetim</a></li>
+            <li><a href="piyasa.html" style="color:gold;">Piyasa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="piyasa-wrapper">
+    <div class="piyasa-baslik">
+        <h1>CANLI KAPALIÇARŞI VERİLERİ</h1>
+        <p>Veriler anlık olarak uluslararası piyasalardan ve serbest piyasadan alınmaktadır.</p>
+    </div>
+
+    <div class="piyasa-grid">
+        <div class="piyasa-karti">
+            <div class="ikon-wrapper">💵</div>
+            <div class="deger-adi">ABD Doları</div>
+            <div class="deger-fiyat" id="usd-fiyat"><span class="yukleniyor">Yükleniyor...</span></div>
+            <div class="degisim" id="usd-degisim">--</div>
+        </div>
+
+        <div class="piyasa-karti">
+            <div class="ikon-wrapper">💶</div>
+            <div class="deger-adi">Euro</div>
+            <div class="deger-fiyat" id="eur-fiyat"><span class="yukleniyor">Yükleniyor...</span></div>
+            <div class="degisim" id="eur-degisim">--</div>
+        </div>
+
+        <div class="piyasa-karti" style="border-top-color: gold;">
+            <div class="ikon-wrapper">🟡</div>
+            <div class="deger-adi">Gram Altın (24K)</div>
+            <div class="deger-fiyat" id="gram-fiyat"><span class="yukleniyor">Yükleniyor...</span></div>
+            <div class="degisim artti">Canlı</div>
+        </div>
+
+        <div class="piyasa-karti" style="border-top-color: gold;">
+            <div class="ikon-wrapper">🪙</div>
+            <div class="deger-adi">Çeyrek Altın</div>
+            <div class="deger-fiyat" id="ceyrek-fiyat"><span class="yukleniyor">Yükleniyor...</span></div>
+            <div class="degisim artti">Canlı</div>
+        </div>
+    </div>
+
+    <div class="guncelleme-zamani" id="son-guncelleme">
+        Veriler bekleniyor...
+    </div>
+  </main>
+
+  <script src="bildirim.js"></script>
+  <script src="sepet.js"></script>
+  <script src="script.js"></script>
+  
+  <script src="piyasa.js"></script>
+
+</body>
+</html>

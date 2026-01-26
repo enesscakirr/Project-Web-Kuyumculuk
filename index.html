@@ -17,20 +17,24 @@
           <li><a href="index.html">Ürünlerimiz</a></li>
           <li><a href="erkek.html">Erkek</a></li> 
           <li><a href="imalathane.html">İmalathanemiz</a></li>
-          <li><a href="bilgiler.html">Bilgiler</a></li>
+                    <li><a href="bilgiler.html">Bilgiler</a></li>
+          <li><a href="piyasa.html">Canlı Piyasa</a></li> </ul>
         </ul>
       </nav>
     </div>
   </header>
   <!-- SLIDER (Otomatik kayan görseller) -->
-  <section class="slider">
+<section class="slider">
     <div class="slides">
       <div class="slide"><img src="images/slider4.jpg" alt="Alyans"></div>
       <div class="slide"><img src="images/slider2.webp" alt="Bilezik"></div>
       <div class="slide"><img src="images/slider3.jpg" alt="Zincir"></div>
       <div class="slide"><img src="images/alyans3.jpeg" alt="Yatırımlık Altın"></div>
     </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
   </section>
+
   <!-- ÜRÜN KATEGORİLERİ -->
   <section class="kategoriler">
   <h2>ÜRÜN KATEGORİLERİ</h2>
@@ -85,4 +89,11 @@
   <div class="footer-bottom">
     &copy; 2025 Çakır Kuyumculuk. Tüm hakları saklıdır.
   </div>
-</footer></body></html>
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Yukarı Çık">&#8679;</button>
+
+<script src="bildirim.js"></script>
+<script src="sepet.js"></script>
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sepetim - Çakır Kuyumculuk</title>
+  <link rel="stylesheet" href="stil.css">
+  
+  <style>
+    .sepet-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+    .sepet-tablo {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    .sepet-tablo th {
+        background-color: #013220;
+        color: gold;
+        padding: 15px;
+        text-align: left;
+    }
+    .sepet-tablo td {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+        color: #333;
+    }
+    .sil-btn {
+        background-color: #ffdddd;
+        color: red;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .sil-btn:hover { background-color: #ffaaaa; }
+    
+    .sepet-ozet {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 1.2em;
+    }
+    .toplam-fiyat {
+        color: #013220;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+    .sepet-butonlar {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+    .btn-bosalt {
+        background-color: #ddd;
+        color: #333;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    .btn-onayla {
+        background-color: gold;
+        color: #013220;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .btn-onayla:hover {
+        background-color: #d4af37;
+        transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Çakır Kuyumculuk</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li> 
+          <li><a href="index.html">Ürünlerimiz</a></li>
+          <li><a href="piyasa.html">Canlı Piyasa</a></li> </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="sepet-container">
+        <h1 style="border-bottom: 3px solid gold; display:inline-block; padding-bottom:10px;">ALIŞVERİŞ SEPETİNİZ</h1>
+        
+        <table class="sepet-tablo">
+            <thead>
+                <tr>
+                    <th>Ürün Resmi</th>
+                    <th>Ürün Adı</th>
+                    <th>Fiyat</th>
+                    <th>İşlem</th>
+                </tr>
+            </thead>
+            <tbody id="sepet-listesi">
+                </tbody>
+        </table>
+
+        <div class="sepet-ozet">
+            <span>Toplam Tutar:</span>
+            <span class="toplam-fiyat" id="sepet-toplam-tutar">0 TL</span>
+        </div>
+
+        <div class="sepet-butonlar">
+            <button class="btn-bosalt" onclick="sepetiBosalt()">Sepeti Boşalt</button>
+            <button class="btn-onayla" onclick="alert('Siparişiniz alındı! (Demo)')">Siparişi Tamamla &#10095;</button>
+        </div>
+    </div>
+  </main>
+
+  <script src="bildirim.js"></script>
+  <script src="sepet.js"></script>
+  <script src="script.js"></script> 
+</body>
+</html>

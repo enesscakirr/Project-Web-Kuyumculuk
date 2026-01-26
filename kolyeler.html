@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="stil.css">
   <link rel="stylesheet" href="Kategoriler/kategori.css">
 </head>
-<body>
+<body style="background-image: url('images/zb2.webp'); background-size: cover; background-position: center; background-attachment: fixed;">
   <header>
     <div class="navbar">
       <div class="logo">Çakır Kuyumculuk</div>
@@ -16,12 +16,12 @@
           <li><a href="index.html">Ürünlerimiz</a></li> 
           <li><a href="erkek.html">Erkek</a></li>
           <li><a href="imalathane.html">İmalathanemiz</a></li>
+          <li><a href="piyasa.html">Canlı Piyasa</a></li>
           <li><a href="bilgiler.html">Bilgiler</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <body style="background-image: url('images/zb2.webp'); background-size: cover; background-position: center; background-attachment: fixed;">
   <main>
     <section class="kategori-banner">
       <div class="banner-overlay">
@@ -127,4 +127,18 @@
     <div class="footer-bottom">
       &copy; 2025 Çakır Kuyumculuk. Tüm hakları saklıdır.
     </div>
-  </footer></body></html>
+  </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Yukarı Çık">&#8679;</button>
+
+  <div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+  <script src="bildirim.js"></script>
+<script src="sepet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
